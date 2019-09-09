@@ -9,7 +9,7 @@ echo 'export GOPATH=~/go' >> ~/.bash_profile
 echo 'export PATH=$PATH:~/go/bin' >> ~/.bash_profile
 source ~/.bash_profile
 
-#Clones and installs Tendermint
+#Clones and installs Gaia
 mkdir -p $GOPATH/src/github.com/cosmos
 cd $GOPATH/src/github.com/cosmos
 git clone https://github.com/cosmos/gaia
