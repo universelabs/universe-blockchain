@@ -6,7 +6,7 @@ sudo apt-get update
 sudo apt-get install golang-go build-essential
 mkdir -p $HOME/go/bin
 echo 'export GOPATH=~/go' >> ~/.bash_profile
-echo 'export PATH=$PATH:~go/bin' >> ~/.bash_profile
+echo 'export PATH=$PATH:~/go/bin' >> ~/.bash_profile
 source ~/.bash_profile
 
 #Clones and installs Tendermint
