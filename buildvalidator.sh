@@ -16,4 +16,8 @@ cd $GOPATH/src/github.com/cosmos
 git clone https://github.com/cosmos/gaia
 cd gaia && make install
 
+#Just putting this here a second time to try something, as it seems not to work the first time
+source ~/.bash_profile
+
+
 #Steps that come after this are manual
