@@ -49,7 +49,7 @@ echo -e "\nInitializing gaiad...."
 
 
 # GET MONIKER
-echo -e "\nUniverse needs to distinguish individual nodes from one another. This is \naccomplished by having users choose a Universe node name. \n\nRecommended name: 'galaxy-node'\n"
+echo -e "\nUniverse needs to distinguish individual nodes from one another. This is \naccomplished by having users choose a Universe node name. \n\nRecommended name: 'Universe-node'\n"
 read -p "Name your Universe node: " name
 
 # INITALIZES THE BLOCKCHAIN (Can re-append &>/dev/null to below line after debugging, script seems to exit here-- let's not append)
@@ -63,7 +63,6 @@ mv genesis.json ~/.gaiad/config/genesis.json
 # ADD SEEDS TO CONFIG.TOML
 echo -e "\n
 Adding seeds to config...."
-find-and-replace on config.toml to set seed node
 original_string='seeds = ""'
 replace_string='seeds = "c22d2888eae9e6a1a4b869b75f9055c2b1636fad@157.245.98.69:26656,5e82cc5efa3c9cc1d4440c493a58fbf5abc2158d@167.71.101.150:26656"'
 sed -i -e "s/$original_string/$replace_string/g" ~/.gaiad/config/config.toml
