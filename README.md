@@ -4,7 +4,7 @@ Universe blockchain network
 
 ## Mac Installer:
 
-bash <(curl -s https://raw.githubusercontent.com/galaxypi/galaxy/master/install-mac.sh)
+bash <(curl -s https://github.com/universelabs/universe-network/raw/master/install-mac.sh)
 
 
 ### Tutorials used:
