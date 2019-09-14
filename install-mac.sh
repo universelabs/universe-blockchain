@@ -47,8 +47,8 @@ chmod +x gaiad
 
 echo -e "\nInitializing gaiad...."
 
-# INITALIZES THE BLOCKCHAIN
-./gaiad init &>/dev/null
+# INITALIZES THE BLOCKCHAIN (Can re-append &>/dev/null to below line after debugging, script seems to exit here)
+./gaiad init 
 
 echo -e "\nFetching genesis block...."
 # fetches genesis.json
