@@ -19,5 +19,14 @@ cd gaia && make install
 #Just putting this here a second time to try something, as it seems not to work the first time
 source ~/.bash_profile
 
+# Cross-compiles Gaia
+go get github.com/mitchellh/gox
+cd $GOPATH/src/github.com/cosmos/gaia/cmd/gaiacli
+gox
+cd $GOPATH/src/github.com/cosmos/gaia/cmd/gaiad
+gox
+
+# We will deal with trimming output when this script is known to work correctly
+
 
 #Steps that come after this are manual
