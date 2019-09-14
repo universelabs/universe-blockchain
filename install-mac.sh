@@ -37,7 +37,7 @@ rm -rf ~/.gaiad
 rm -rf ~/.gaiacli
 
 # DOWNLOADS DAEMON AND CLI ~/universe
-echo "Downloading and installing.... galaxycli and galaxyd."
+echo "Downloading and installing.... gaiacli and gaiad."
 mkdir ~/universe
 cd ~/universe
 curl -LO#f https://github.com/universelabs/universe-network/releases/download/v0.1/gaiacli
