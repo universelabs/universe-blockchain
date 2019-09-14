@@ -60,13 +60,13 @@ echo -e "\nFetching genesis block...."
 curl -LO#f https://github.com/universelabs/universe-network/raw/master/genesis.json
 mv genesis.json ~/.gaiad/config/genesis.json
 
-############ THIS SECTION COMMENTED OUT UNTIL CONFIRMATION ON NECESSITY
-# echo -e "\n
-# Adding seeds to config...."
-# find-and-replace on config.toml to set seed node
-# original_string='seeds = ""'
-# replace_string='seeds = "a0cd321854769978eea1ffb57d341ecaf6551905@149.28.45.92:26656,ea7ff5667f65c52e8c673bc96885a66fe6c1ec7b@98.118.185.162:26656,642f7a68f1af520a1b05134382fe97ba7513ee41@45.77.36.79:26656"'
-# sed -i -e "s/$original_string/$replace_string/g" ~/.gaiad/config/config.toml
+# ADD SEEDS TO CONFIG.TOML
+echo -e "\n
+Adding seeds to config...."
+find-and-replace on config.toml to set seed node
+original_string='seeds = ""'
+replace_string='seeds = "c22d2888eae9e6a1a4b869b75f9055c2b1636fad@157.245.98.69:26656,5e82cc5efa3c9cc1d4440c493a58fbf5abc2158d@167.71.101.150:26656"'
+sed -i -e "s/$original_string/$replace_string/g" ~/.gaiad/config/config.toml
 
 # SUMMARY
 echo -e "\033[1;35m\n\nWelcome to the Universe network \xF0\x9F\x8E\x89 \xF0\x9F\x8C\x8C ..................... \033[0m\n
