@@ -47,8 +47,13 @@ chmod +x gaiad
 
 echo -e "\nInitializing gaiad...."
 
-# INITALIZES THE BLOCKCHAIN (Can re-append &>/dev/null to below line after debugging, script seems to exit here)
-./gaiad init 
+
+# GET MONIKER
+echo -e "\nUniverse needs to distinguish individual nodes from one another. This is \naccomplished by having users choose a Universe node name. \n\nRecommended name: 'galaxy-node'\n"
+read -p "Name your Universe node: " name
+
+# INITALIZES THE BLOCKCHAIN (Can re-append &>/dev/null to below line after debugging, script seems to exit here-- let's not append)
+./gaiad init name --chain-id universe
 
 echo -e "\nFetching genesis block...."
 # fetches genesis.json
@@ -62,13 +67,6 @@ mv genesis.json ~/.gaiad/config/genesis.json
 # original_string='seeds = ""'
 # replace_string='seeds = "a0cd321854769978eea1ffb57d341ecaf6551905@149.28.45.92:26656,ea7ff5667f65c52e8c673bc96885a66fe6c1ec7b@98.118.185.162:26656,642f7a68f1af520a1b05134382fe97ba7513ee41@45.77.36.79:26656"'
 # sed -i -e "s/$original_string/$replace_string/g" ~/.gaiad/config/config.toml
-
-# GET MONIKER
-echo -e "\nUniverse needs to distinguish individual nodes from one another. This is \naccomplished by having users choose a Universe node name. \n\nRecommended name: 'galaxy-node'\n"
-read -p "Name your Universe node: " name
-moniker_original="moniker = \"\""
-moniker_actual="moniker = \"$name\""
-sed -i -e "s/$moniker_original/$moniker_actual/g" "$HOME/.gaiad/config/config.toml"
 
 # SUMMARY
 echo -e "\033[1;35m\n\nWelcome to the Universe network \xF0\x9F\x8E\x89 \xF0\x9F\x8C\x8C ..................... \033[0m\n
