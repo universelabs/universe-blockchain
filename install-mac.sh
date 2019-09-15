@@ -32,14 +32,14 @@ case "$choice" in
 esac
 
 # REMOVES EXISTING INSTALL
-rm -rf ~/universe
+rm -rf ~/.universe
 rm -rf ~/.gaiad
 rm -rf ~/.gaiacli
 
 # DOWNLOADS DAEMON AND CLI ~/universe
 echo "Downloading and installing.... gaiacli and gaiad."
-mkdir ~/universe
-cd ~/universe
+mkdir ~/.universe
+cd ~/.universe
 curl -LO#f https://github.com/universelabs/universe-network/releases/download/v0.1/gaiacli
 curl -LO#f https://github.com/universelabs/universe-network/releases/download/v0.1/gaiad
 chmod +x gaiacli
@@ -72,10 +72,10 @@ echo -e "\033[1;35m\n\nWelcome to the Universe network \xF0\x9F\x8E\x89 \xF0\x9F
 Universe blockchain is now installed and ready to sync......
 ...............................................................................
 Navigate into the Universe directory by typing the following;
-cd ~/universe
+cd ~/.universe
 ..............................................................................."
 
 echo -e "\nThen open a new terminal window and sync your Universe Node by typing....
-~/universe
+~/.universe
 ./gaiad start
 Note: Syncing your Universe Node can take a while."
