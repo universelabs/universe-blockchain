@@ -1,4 +1,4 @@
-read -p "Would you like to remove the Universe Blockchain from your computer? (Y/n)(: " choice
+read -p "Would you like to remove the Universe Blockchain from your computer? (Y/n)" choice
 
 case "$choice" in
     y|Y) echo -e "Uninstalling";;
