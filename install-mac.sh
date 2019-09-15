@@ -22,7 +22,9 @@ echo -e "
 # ASK FOR CONSENT
 echo -e "This script will remove previously installed directories:
 - gaiacli
-- gaiad"
+- gaiad
+- .universe
+And upgrade you to the latest Universe Blockchain"
 
 read -p "Are you ok with that? (y/N): " choice
 
