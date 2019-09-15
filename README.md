@@ -8,6 +8,11 @@ Universe blockchain network
 bash <(curl -s https://raw.githubusercontent.com/universelabs/universe-network/master/install-mac.sh)
 ```
 
+## Mac Uninstaller
+```
+bash <(curl -s https://raw.githubusercontent.com/universelabs/universe-network/master/uninstall-mac.sh)
+```
+
 ### Tutorials used:
 
 https://blog.althea.net/making-a-cosmos-chain/
@@ -15,4 +20,3 @@ https://blog.althea.net/making-a-cosmos-chain/
 ### Pertinent Tutorials:
 
 https://cosmos-sdk.readthedocs.io/en/develop/staking/testnet.html
-
