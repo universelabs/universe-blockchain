@@ -52,11 +52,11 @@ echo -e "\nInitializing gaiad...."
 echo -e "\nUniverse needs to distinguish individual nodes from one another. This is \naccomplished by having users choose a Universe node name. \n\nRecommended name: 'Universe-node'\n"
 read -p "Name your Universe node: " name
 
-# INITALIZES THE BLOCKCHAIN (Can re-append &>/dev/null to below line after debugging, script seems to exit here-- let's not append)
-./gaiad init name --chain-id universe
+# INITALIZES THE BLOCKCHAIN 
+./gaiad init name --chain-id universe &>/dev/null
 
+# FETCHES GENESIS.JSON
 echo -e "\nFetching genesis block...."
-# fetches genesis.json
 curl -LO#f https://github.com/universelabs/universe-network/raw/master/genesis.json
 mv genesis.json ~/.gaiad/config/genesis.json
 
