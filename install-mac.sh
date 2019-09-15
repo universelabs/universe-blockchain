@@ -80,4 +80,8 @@ cd ~/.universe
 echo -e "\nThen open a new terminal window and sync your Universe Node by typing....
 ~/.universe
 ./gaiad start
-Note: Syncing your Universe Node can take a while."
+Note: Syncing your Universe Node can take a while.
+
+To Uninstall, Paste this into your terminal:
+bash <(curl -s https://raw.githubusercontent.com/universelabs/universe-network/master/uninstall-mac.sh)
+"
