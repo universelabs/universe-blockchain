@@ -50,8 +50,6 @@
 
 ## Quick start
 
-Quick start options:
-
 Currently the only supported operating system for Universe Blockchain is macOS. (Linux support coming soon...)
 
 To install the Universe Blockchain on macOS, run the following...
@@ -99,10 +97,6 @@ Get updates on Universe's development and chat with the project maintainers and 
 - Join the official Universe [Slack](https://join.slack.com/t/universelabs/shared_invite/enQtNjA2MjM1NjAyNzI0LTUyYWZjM2I5M2VhMTU3YTY3ZGI0YTAwNDQwN2I1Mzc4Yjk3YTg2Y2IxOGMyMDljOTdkM2Y4NTM3ZTAwYzc3NTg).
 
 ## Maintainers
-
-**Itamar Reif**
-- <https://twitter.com/itamarreif>
-- <https://github.com/itamarreif>
 
 **Jacob Gadakian**
 - <https://twitter.com/gadikian>
